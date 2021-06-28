@@ -1,5 +1,10 @@
-<p>Esta es mi nueva pagina python-django</p>
-<p>{{ nombre }}</p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+crossorigin="anonymous">
+
+<div class="container text-center">
+<h1>Esta es mi nueva pagina python-django</h1>
+<h2>{{ nombre }}</h2>
 
 <form action="{% url 'password' %}">
     <select name="length">
@@ -20,5 +25,7 @@
     <br>
     <input type="checkbox" name="special">special
     <br>
-    <input type="submit" value="generar password">
+    <br>
+    <input class="btn btn-warning" type="submit" value="Generar password">
 </form>
+</div>
