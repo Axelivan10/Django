@@ -19,4 +19,5 @@ from ejercicio import views
 
 urlpatterns = [
     path('', views.home),
+    path('createpassword', views.create_password, name='password'),
 ]
